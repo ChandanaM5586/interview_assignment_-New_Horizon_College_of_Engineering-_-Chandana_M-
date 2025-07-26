@@ -1,0 +1,17 @@
+using System;
+
+public class Prob1
+{
+    public static bool DuplicateValue(int[] nums)
+    {
+        Array.Sort(nums);
+        for (int i = 0; i < nums.Length - 1; i++)
+        {
+            if (nums[i] == nums[i + 1])
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+}
